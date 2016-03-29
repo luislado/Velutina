@@ -13,5 +13,9 @@
 # Retrieve auxiliary rasters
   T_an <- raster("/Volumes/LACIE SHARE/Atlas/Proxies/Clima_aire/Temperatura/T_00_06.tif")
   P_an <- raster("/Volumes/LACIE SHARE/Atlas/Proxies/Clima_aire/Precipitacion/P_00_06.tif")
+  
+  b <- stack(c(T_an,P_an)
+  names(b) <- c("T_an","P_an")
+
  
 
